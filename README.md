@@ -100,11 +100,6 @@ SSD1306-PROGMEM-Animation/
 ├── SSD1306-PROGMEM-Animation.ino
 ├── animation_frames.h
 ├── README.md
-│
-└── docs/
-    ├── demo.gif
-    ├── demo.mp4
-    └── screenshots/
 ```
 
 ---
