@@ -1,4 +1,4 @@
-# SSD1306 PROGMEM Animation
+# SSD1306 Animation Engine
 
 <p align="center">
   <img src="docs/demo.gif" width="450" alt="Animation Demo">
@@ -11,7 +11,7 @@
 ---
 ## Overview
 
-SSD1306 PROGMEM Animation is a lightweight animation engine for SSD1306 OLED displays running on ESP8266 and ESP32 microcontrollers.
+SSD1306 Animation Engine is a lightweight animation engine for SSD1306 OLED displays running on ESP8266 and ESP32 microcontrollers.
 
 The project stores animation frames in Flash memory (PROGMEM), minimizing RAM usage while allowing long animation sequences to be played efficiently.
 
@@ -70,6 +70,19 @@ Install through Arduino Library Manager:
 
 ---
 
+## Installation
+
+1. Download or clone this repository.
+2. Open `SSD1306_PROGMEM_Animationv2.ino` in Arduino IDE.
+3. Install the required libraries:
+   - Adafruit GFX Library
+   - Adafruit SSD1306
+4. Connect the OLED display.
+5. Select your ESP8266 or ESP32 board.
+6. Upload the sketch.
+
+The sample animation included in `animation_frames.h` will start automatically after flashing the device.
+
 ## Wiring
 
 ### ESP8266
@@ -95,10 +108,10 @@ Install through Arduino Library Manager:
 ## Project Structure
 
 ```text
-SSD1306-PROGMEM-Animation/
+SSD1306_Animation_Engine/
 │
-├── SSD1306-PROGMEM-Animation.ino
-├── animation_frames.h
+├── SSD1306_PROGMEM_Animationv2.ino   # Main animation engine
+├── animation_frames.h                # Sample animation frames
 ├── README.md
 ```
 
@@ -184,6 +197,12 @@ For a 128×64 display:
 * Display buffer: 1024 bytes RAM
 
 ---
+
+## Sample Animation
+
+The repository includes a ready-to-run demonstration animation stored in `animation_frames.h`.
+
+You can replace the sample frames with your own 128×64 monochrome animation without modifying the animation engine.
 
 ## License
 
